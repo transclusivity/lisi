@@ -52,7 +52,8 @@ messages have fields you fill out
 ## ...
 
 # 5. Where do I go from here?
-> *“I'm not a great programmer; I'm just a good programmer with great habits.” ― Kent Beck*
+> *“What's in your hands I think and hope is intelligence: the ability to see the machine as
+more than when you were first led up to it, that you can make it more.” ― Alan J. Perlis*
 
 Included in this repository are the Lia manuals. This collection  of manuals is divided into smaller, well specified *Educational Modules* or EMs.
 These are meant to form the basis of the curriculum for teaching Lia. There are 4 included in the [manuals](manuals) directory:
@@ -63,7 +64,6 @@ These are meant to form the basis of the curriculum for teaching Lia. There are 
 
 ---
 
-> *“What's in your hands I think and hope is intelligence: the ability to see the machine as
-more than when you were ﬁrst led up to it that you can make it more.” ― Alan J. Perlis*
+> *“I'm not a great programmer; I'm just a good programmer with great habits.” ― Kent Beck*
 
 outro
