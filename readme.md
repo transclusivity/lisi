@@ -36,7 +36,7 @@ models are placed in a context list for manipulation
 scalar messages are built ins, lists are user defined
 messages have fields you fill out
 ## 2.3 modes
-
+...
 # 3. How do I use it?
 > *"Programming is the art of telling another human being what one wants the computer to do." — Donald E. Knuth*
 
@@ -55,7 +55,7 @@ messages have fields you fill out
 > *“What's in your hands I think and hope is intelligence: the ability to see the machine as
 more than when you were first led up to it, that you can make it more.” ― Alan J. Perlis*
 
-Included in this repository are the Lia manuals. This collection  of manuals is divided into smaller, well specified *Educational Modules* or EMs.
+Included in this repository are the Lia manuals. This collection  of manuals is divided into smaller, well specified *Accepted Form * or EMs.
 These are meant to form the basis of the curriculum for teaching Lia. There are 4 included in the [manuals](manuals) directory:
 - [EM-0](manuals/em-0.md): A manual for how Ems should be written and structured
 - [EM-1](manuals/em-1.md): A user manual for those who wish to use the language

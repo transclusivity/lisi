@@ -12,8 +12,12 @@ class Element:
             case Term ():
                 if self.value [0].isdigit ():
                     return f"\x1b[36m{self.value}\x1b[0m"
+                elif self.value in "[]":
+                    return f"\x1b[33m{self.value}\x1b[0m"
+                elif self.value [0].isalpha ():
+                    return f"\x1b[3m{self.value}\x1b[0m"
                 else:
-                    return f"\x1b[35;3m{self.value}\x1b[0m"
+                    return f"\x1b[97m{self.value}\x1b[0m"
             case Newline ():
                 return f"\n{self.line + 1} | "
 
@@ -33,8 +37,6 @@ class Term (Element):
 class Book:
     text     : list [str] = new (list)
     cursor   : int = 0 
-    line     : int = 1 
-    position : int = 1
 
     def __str__ (self):
         return f"{self.text[0].line} | " + "".join (map (str, self.text))
@@ -71,5 +73,22 @@ def analyze (source: str) -> Book:
     return book
 
 def read (book: Book):
-    pass
+    while book.cursor < len (book.text):
+        match book.text [book.cursor]:
+            case Blank () | Newline ():
+                book.cursor += 1
+                return read (book)
+            case Term () as term:
+                if term.value == "[":
+                    book.cursor += 1
+                    quotation = list()
+                    while (part := read (book)).value != "]":
+                        quotation.append (part)
+                    return quotation
+                else:
+                    book.cursor += 1
+                    return term
+                return term
+            case unknown:
+                pass
 
