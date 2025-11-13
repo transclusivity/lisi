@@ -10,9 +10,13 @@ project is needed. For more information or to access the online copies of the em
 
 ### Index
 [1. Why Lia?](#1-why-lia)
+
 [2. What is Lia?](#2-what-is-lia)
-[3. How do I use it?](#3-how-do-i-use-it)  
-[4. Q & A](#4-q--a)  
+
+[3. How do I use it?](#3-how-do-i-use-it)
+
+[4. Q & A](#4-q--a)
+
 [5. Where do I go from here?](#5-where-do-i-go-from-here)
 
 # 1. Why Lia?
